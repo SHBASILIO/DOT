@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    background-image: linear-gradient(to right, #E6E6E6, #F2F2F2);
+}
+/* CLASSES AUXILIARES */
+
+.center{
+    width: 100%;
+    padding:0 2%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+:root{
+    --color-black: #404040;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header{
+    padding: 10px 0;
+    margin-bottom: 100px;
+}
+
+header img{
+    width: 7.5%;
+    height:7.5%;
+
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/* SECTION | TREE */
+
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tree{
+    display: flex;
+    align-items: center;
+
+    width:300px;
+    padding: 10px 15px;
+}
+
+.lineM{
+    border-left: 5px solid blue;
+    background-image: linear-gradient(to right, #D9D9D9 , #F2F2F2);
+}
+
+.lineF{
+    border-left: 5px solid red;
+    background-image: linear-gradient(to right, #F2F2F2 , #FFFFFF);
+}
+
+.lineC{
+    margin-top: 40px;
+    border-left: 5px solid #404040;
+    background-image: linear-gradient(to right, #F2F2F2 , #FFFFFF);
+}
+
+.lineC .perfilUser strong{
+    padding: 0px 5px;
+     color: #CCCCCC;
+     
+     background-color: #404040;
+ }
+ 
+
+.lineF .perfilUser strong{
+   padding: 0px 5px;
+    color: #CCCCCC;
+    
+    background-color: #404040;
+}
+
+.tree .perfilImg{
+    padding: 5px;
+    margin-right: 25px;
+
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.tree strong{
+    font-variant: small-caps;
+}
+
+.tree a strong{
+    font-size: 1.15rem;
+}
+
+.container{
+    margin: 25px 0;
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CLASSES AUXILIARES */
+
+html, body{
+    height: 100vh;
+    background-color: #404040;
+}
+
+.w50{
+    width: 100%;
+    float: left;
+}
+
+.center{
+    width: 100%;
+    padding: 0 2%;
+    margin:  0 auto;
+    max-width: 1280px;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+/* HEADER */
+
+header{
+    display: none;
+}
+
+section.img_main{
+    color: #546130;
+}
+
+section.img_main{
+    width: 100%;
+    height: 910px;
+    position: relative;
+    background-size:cover;
+    background-repeat:no-repeat;    
+    background-image: url('../_Imagens/background-Header.png');
+}
+
+section.img_main h1{
+    padding: 20px 0;
+
+    font-size: 2.5rem;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+section.img_main p{
+    margin-top: -10px;
+    font-size:1.35rem;
+    text-align: center;
+}
+
+/* CARDS */
+
+section.cards{
+    color: #FFF;
+    padding: 25px 0;
+}
+
+.card_single{
+    width:33.3%;
+    float: left;
+
+    padding: 15px;
+}
+
+.card_single img{
+    width: 100%;
+    border: 5px solid #CCC;
+}
+
+.card_single h2{
+    padding: 10px 0;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.card_single p{
+    padding: 10px 0;
+    text-align: justify;
+}
+
+/* NEW SECTION */
+
+.new_section{
+    padding: 35px 0;
+    background-color: #6F6F6F;
+}
+
+.element{
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img > img{
+    width: 325px;
+    height:325px;
+    border-radius: 50%;
+
+    border: 7.5px solid #404040
+}
+
+.element .txt{
+   padding-left: 5%;
+}
+
+.element h2{
+    margin-bottom: 20px;
+    font-variant: small-caps;
+} 
+
+.element p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 25px 0;
+}
+
+footer p{
+    color: #CCC;
+    text-align: center;
+    font-size: 1.15rem;
+    font-variant: small-caps;
+    
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 680px){
+
+    header{
+        color: #FFF;
+        display: block;
+        padding: 10px 0;
+    }
+
+    header h1{
+        padding: 10px 0;
+        font-size:2rem;
+        text-align: center;
+        font-variant: small-caps;
+    }
+    
+    header p{
+        margin-top: -12.5px;
+        margin-bottom: 10px;
+        font-size:1rem;
+        text-align: center;
+    }
+
+    section.img_main h1,
+    section.img_main p{
+        display: none;
+    }
+
+    .card_single{
+        width:100%;
+    }
+
+    .element > .img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .element h2{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .element{
+        display: block;
+    }
+}
